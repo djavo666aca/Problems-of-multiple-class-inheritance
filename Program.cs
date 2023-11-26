@@ -21,7 +21,7 @@ class C : A
         Console.WriteLine("Inplemettacija C");
     }
 }
-class D : B 
+class D : B ,C
 {
     
 }
