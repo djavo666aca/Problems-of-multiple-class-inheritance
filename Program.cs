@@ -1,10 +1,36 @@
-﻿namespace Problems_of_multiple_class_inheritance1
+﻿using System;
+
+class A 
 {
-    internal class Program
+    public virtual void Print() 
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello, World!");
-        }
+        Console.WriteLine("Inplemettacija A");
+    }
+}
+class B : A
+{
+    public override void Print()
+    {
+        Console.WriteLine("Inplemettacija B");
+    }
+}
+class C : A
+{
+    public override void Print()
+    {
+        Console.WriteLine("Inplemettacija C");
+    }
+}
+class D : B 
+{
+    
+}
+
+class Program 
+{
+    public static void Main() 
+    {
+    D d = new D();
+        d.Print();
     }
 }
